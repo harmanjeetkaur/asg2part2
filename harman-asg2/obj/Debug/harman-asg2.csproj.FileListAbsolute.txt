@@ -74,3 +74,7 @@ C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\Castle.Core.xml
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\Moq.pdb
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\Moq.xml
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2\bin\System.Diagnostics.DiagnosticSource.xml

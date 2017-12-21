@@ -50,3 +50,11 @@ C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\obj\Debug\harman-asg2.Tests.csproj.CoreCompileInputs.cache
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\obj\Debug\harman-asg2.Tests.dll
 C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\obj\Debug\harman-asg2.Tests.pdb
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.Owin.Security.Google.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.Owin.Security.Google.xml
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.ApplicationInsights.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\Microsoft.ApplicationInsights.xml
+C:\Users\Harman\Desktop\Sem 3\ASP.net\harman-assignment2\harman-asg2\harman-asg2.Tests\bin\Debug\System.Diagnostics.DiagnosticSource.xml
