@@ -1,0 +1,42 @@
+﻿@model harman_asg2.Models.table2furniture
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>table2furniture</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CustomerID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CustomerID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Furniture_type)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Furniture_type)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FloorTiles)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FloorTiles)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Brand }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
