@@ -213,10 +213,12 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\liveRepository.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Model1.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\table1furniture.cs" />
+    <Compile Include="Models\table1furnitureRepository.cs" />
     <Compile Include="Models\table2furniture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
