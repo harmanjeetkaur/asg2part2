@@ -105,6 +105,34 @@ namespace harman_asg2.Tests.Controllers
             Assert.AreEqual("Error", actual.ViewName);
         }
 
+        [TestMethod]
+        public void DeleteConfirmedNoId()
+        {
+            //act
+            ViewResult actual = controller.DeleteConfirmed(null);
+
+            //assert
+            Assert.AreEqual("Error", actual.ViewName);
+        }
+        [TestMethod]
+        public void DeleteConfirmedInvalidId()
+        {
+            //act
+            ViewResult actual = controller.DeleteConfirmed(7);
+            //assert
+            Assert.AreEqual("Error", actual.ViewName);
+        }
+
+        [TestMethod]
+        public void DeleteConfirmedValidId()
+        {
+            //act
+
+            ViewResult actual = controller.DeleteConfirmed(1);
+            //assert
+            Assert.AreEqual("Index", actual.ViewName);
+        }
+
     }
 }
 

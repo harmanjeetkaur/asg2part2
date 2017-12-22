@@ -126,7 +126,7 @@ namespace harman_asg2.Controllers
         //// POST: table1furniture/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ViewResult DeleteConfirmed(int? id)
         {
             if(id == null)
             {
@@ -140,7 +140,7 @@ namespace harman_asg2.Controllers
             }
             db.Delete(table1furniture);
             
-            return RedirectToAction("Index");
+            return View("Index");
         }
 
         //protected override void Dispose(bool disposing)
