@@ -20,5 +20,10 @@ namespace harman_asg2.Models
         [Required]
         [StringLength(50)]
         public string RoomColor { get; set; }
+
+        internal static dynamic Count()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

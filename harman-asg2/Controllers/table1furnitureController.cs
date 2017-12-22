@@ -8,7 +8,6 @@ using System.Web;
 using System.Web.Mvc;
 using harman_asg2.Models;
 
-
 namespace harman_asg2.Controllers
 {   [Authorize]
     public class Table1furnitureController : Controller
@@ -35,23 +34,25 @@ namespace harman_asg2.Controllers
         // GET: table1furniture
         public ViewResult Index()
         {
+            var table1furniture = db.table1furniture;
+            ViewBag.table1furnitureCount = table1furniture.Count();
             return View(db.table1furniture.ToList());
         }
-        //[AllowAnonymous]
-        //// GET: table1furniture/Details/5
-        //public ActionResult Details(int? id)
-        //{
-        //    if (id == null)
-        //    {
-        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-        //    }
-        //    table1furniture table1furniture = db.table1furniture.Find(id);
-        //    if (table1furniture == null)
-        //    {
-        //        return HttpNotFound();
-        //    }
-        //    return View(table1furniture);
-        //}
+        [AllowAnonymous]
+        // GET: table1furniture/Details/5
+        public ViewResult Details(int? id)
+        {
+            if (id == null)
+            {
+                return View("Error");
+            }
+            table1furniture table1furniture = db.table1furniture.FirstOrDefault(a => a.CustomerID == id);
+            if (table1furniture == null)
+            {
+                return View("Error");
+            }
+            return View(table1furniture);
+        }
 
         //// GET: table1furniture/Create
         //public ActionResult Create()
