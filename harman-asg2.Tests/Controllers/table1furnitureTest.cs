@@ -12,7 +12,7 @@ using System.Linq;
 
 namespace harman_asg2.Tests.Controllers
 {
-    
+
     [TestClass]
     public class table1furnitureTest
     {
@@ -26,10 +26,10 @@ namespace harman_asg2.Tests.Controllers
         {
             //arrange
             mock = new Mock<ITable1furnitureRepository>();
-           
 
-                        //mock Album data
-                        table1furniture = new List<table1furniture>
+
+            //mock Album data
+            table1furniture = new List<table1furniture>
                         {
                 new table1furniture {CustomerID = 1, Brand= "American furniture", Price= 200 },
                  new table1furniture {CustomerID= 2, Brand= "R & W", Price= 400 },
@@ -45,31 +45,31 @@ namespace harman_asg2.Tests.Controllers
             mock.Setup(m => m.table1furniture).Returns(table1furniture.AsQueryable());
 
             //pass the mock to the controller
-            controller = new Table1furnitureController(mock.Object);    
+            controller = new Table1furnitureController(mock.Object);
         }
 
         [TestMethod]
         public void IndexLoadsValid()
         {
-            
+
 
             //act
             ViewResult result = controller.Index() as ViewResult;
 
             //assert
-            Assert.IsNotNull(result); 
+            Assert.IsNotNull(result);
         }
 
         [TestMethod]
         public void IndexShowsValidtable1furniture()
-        {     
+        {
             //act
             var actual = (List<table1furniture>)controller.Index().Model;
 
 
-           
+
             //assert
-            CollectionAssert.AreEqual(table1furniture , actual);
+            CollectionAssert.AreEqual(table1furniture, actual);
         }
 
 
@@ -85,6 +85,26 @@ namespace harman_asg2.Tests.Controllers
             //assert
             Assert.AreEqual(table1furniture.ToList()[0], actual);
         }
-    }
 
+        [TestMethod]
+
+        public void DetailsInvalidId()
+        {
+            //act
+            ViewResult actual = controller.Details(7);
+            //assert
+            Assert.AreEqual("Error", actual.ViewName);
+        }
+
+        [TestMethod]
+        public void DetailsInvalidNoId()
+        {
+            //act
+            ViewResult actual = controller.Details(null);
+            //assert
+            Assert.AreEqual("Error", actual.ViewName);
+        }
+
+    }
 }
+
